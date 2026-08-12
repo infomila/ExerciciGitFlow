@@ -1,5 +1,9 @@
 import argparse
 
+from taskflow.storage import Storage
+
+_storage = Storage()
+
 
 def build_parser():
     parser = argparse.ArgumentParser(prog="taskflow")
