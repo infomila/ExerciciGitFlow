@@ -12,7 +12,7 @@ def build_parser():
     add_parser = subparsers.add_parser("add", help="Add a new task")
     add_parser.add_argument("title", help="Title of the task")
 
-    delete_parser = subparsers.add_parser("delete", help="Delete a task")
+    delete_parser = subparsers.add_parser("delete", help="Remove a task by its ID")
     delete_parser.add_argument("task_id", type=int, help="ID of the task to delete")
 
     return parser
