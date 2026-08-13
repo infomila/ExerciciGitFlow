@@ -14,3 +14,6 @@ class Storage:
 
     def all(self):
         return list(self._tasks)
+
+    def remove(self, task_id):
+        self._tasks = [t for t in self._tasks if t.id != task_id]
