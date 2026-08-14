@@ -1,4 +1,4 @@
-# TODO: figure out the right threshhold for "due soon"
+# TODO: figure out the right threshold for "due soon"
 
 
 def due_soon(task):
