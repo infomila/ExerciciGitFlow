@@ -1,7 +1,5 @@
 from datetime import datetime, timedelta
 
-# TODO: figure out the right threshold for "due soon"
-
 _SOON = timedelta(days=2)
 
 
