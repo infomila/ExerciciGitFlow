@@ -7,4 +7,5 @@ def due_soon(task):
     if not task.remind_at:
         return False
     remind = datetime.fromisoformat(task.remind_at)
-    return remind - datetime.now() < _SOON
+    delta = remind - datetime.now()
+    return timedelta(0) <= delta < _SOON
